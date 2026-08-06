@@ -30,6 +30,7 @@ Note that these should all be runnable as is from the results data in the repo.
 
 ### Datasets
 - **Raw Text Datasets:** Accessible via [Dropbox link](https://www.dropbox.com/scl/fo/lvajx9100jsy3h9cvis7q/AIocXXICIwHsz-HsXSekC3Y?rlkey=tq7td61h1fufm01cbdu2oqsb5&st=aorlnph5&dl=0). Note that datasets 161-163 are modified from their source. An error in our formatting reframes them as differentiating between news headlines and code samples. 
+- **Incorrect class names:** the `news_class` (97, 139-141) and `disease_class` (101, 145-147) datasets inherit wrong class names from their sources — e.g. `146_disease_class_cardiovascular diseases` actually holds neoplasm abstracts and `140_news_class_Technology` holds AG News business articles — so probe results are unaffected (labels are internally consistent) but the concept differs from the name; per-dataset corrections are in the `Notes` column of `data/probing_datasets_MASTER.csv`.
 - **Model Activations:** Also stored on Dropbox (Note: Files are large).
 
 ## Requirements
